@@ -1,0 +1,6 @@
+# dsh-dl-progress bundle patch.
+# 一行插入同时挂载 host（检测下载命令、维护任务状态、暴露 /dsh-dl-progress/state）
+# 与 client（悬浮面板 + 进度条）两个半区。
+- insert:
+    - id: dsh-dl-progress
+      name: dsh-dl-progress
