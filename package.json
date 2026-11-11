@@ -1,6 +1,6 @@
 {
   "name": "dsh-dl-progress",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "在 DSH 界面显示下载任务名称、真实百分比进度条、下载速率与剩余时间：插件自带 download_file 工具，也为 shell 下载提供兜底识别。",
   "type": "module",
   "license": "MIT",
@@ -41,5 +41,13 @@
     "download",
     "progress",
     "progress-bar"
-  ]
+  ],
+  "repository": {
+    "url": "git+https://github.com/Liatos233/dsh-dl-progress.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/Liatos233/dsh-dl-progress#readme",
+  "bugs": {
+    "url": "https://github.com/Liatos233/dsh-dl-progress/issues"
+  }
 }
