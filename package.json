@@ -1,0 +1,45 @@
+{
+  "name": "dsh-dl-progress",
+  "version": "0.1.0",
+  "description": "在 DSH 界面显示下载任务名称、真实百分比进度条、下载速率与剩余时间：插件自带 download_file 工具，也为 shell 下载提供兜底识别。",
+  "type": "module",
+  "license": "MIT",
+  "author": "liato",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0",
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "download",
+    "progress",
+    "progress-bar"
+  ]
+}
